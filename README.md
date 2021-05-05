@@ -11,6 +11,7 @@
 - Next
 - Typescript
 - styled-components
+- Jest
 
 # 🎉 Contributing
 
