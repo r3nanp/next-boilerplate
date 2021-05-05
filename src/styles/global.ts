@@ -20,6 +20,6 @@ export const GlobalStyles: GlobalStyleComponent<
   }
 
   ${({ theme }) => css`
-    background: ${theme.primary};
+    background: ${theme.colors.primary};
   `}
 `
