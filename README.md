@@ -19,6 +19,10 @@
 
 # 🏃 Getting Started
 
+Add this initial template using this following command:
+
+````npx create-next-app -e git@github.com:r3nanp/next-boilerplate.git```
+
 Run the following command in order to start the application in a development environment:
 
 ```yarn dev```
