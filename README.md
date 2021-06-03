@@ -12,6 +12,7 @@
 - Typescript
 - styled-components
 - Jest
+- Husky
 
 # 🎉 Contributing
 
