@@ -28,5 +28,20 @@ export const theme = {
     white: '#FAFAFA',
     black: '#030517',
     primary: '#f1f2f5'
+  },
+  layers: {
+    base: 10,
+    menu: 20,
+    overlay: 30,
+    modal: 40,
+    alwaysOnTop: 50
+  },
+  shadows: {
+    magical:
+      'rgba(0, 0, 0, 0.02) 0px 30px 30px, rgba(0, 0, 0, 0.03) 0px 0px 8px, rgba(0, 0, 0, 0.05) 0px 1px 0px'
+  },
+  transition: {
+    default: '0.3s ease-in-out',
+    fast: '0.1s ease-in-out'
   }
 }
