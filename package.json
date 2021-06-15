@@ -23,28 +23,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --max-warnings=0",
+    "lint": "next lint && eslint src --max-warnings=0",
+    "postinstall": "husky install",
     "test": "jest --maxWorkers=25%",
     "test:ci": "jest --runInBand",
     "test:watch": "jest --watch --maxWorkers=15%"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*": [
+      "yarn lint",
       "yarn test --findRelatedTests --bail"
     ]
   },
   "dependencies": {
-    "next": "10.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^11.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^13.1.8",
@@ -56,6 +54,7 @@
     "babel-jest": "^26.6.3",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.25.0",
+    "eslint-config-next": "^11.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
